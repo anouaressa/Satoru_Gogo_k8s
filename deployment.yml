@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: luffy-app
+  labels:
+    app: luffy-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: luffy-app
+  template:
+    metadata:
+      labels:
+        app: luffy-app
+    spec:
+      containers:
+      - name: luffy-app
+        image: anouaress/demo01:latest
+        ports:
+        - containerPort: 80
