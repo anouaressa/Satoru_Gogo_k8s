@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: luffy-app
+  namespace: luffy-app 
   labels:
     app: luffy-app
 spec:
