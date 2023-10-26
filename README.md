@@ -11,7 +11,7 @@ sudo apt install -y curl wget
 Install K3s Kubernetes Cluster
 
 ´´´
-curl -sfL https://get.k3s.io | sh –
+curl -sfL https://get.k3s.io | sh - 
 ´´´´
 
 cheking the status of k3s service
